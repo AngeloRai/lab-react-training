@@ -1,8 +1,7 @@
 
 .outer-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: inline-block;
+    
 }
 
 .main-card-box {
@@ -37,4 +36,40 @@
 .stars {
     font-size: 3rem;
     letter-spacing: 1rem;
+}
+
+.driver-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10rem;
+    background-color: #455EB5;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.car-person-pic {
+    border-radius: 100%;
+    height: 6.5rem;
+    width: 7rem;
+}
+
+.person-name {
+    font-size: 1.6rem;
+    color: wheat;
+    padding-left: 10px;
+}
+
+
+.person-rating {
+    color: wheat;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.car-info {
+    color: wheat;
+    font-size: 1rem;
+    padding-left: 10px;
 }

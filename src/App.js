@@ -5,6 +5,7 @@ import Random from './Random';
 import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import Rating from './Rating';
+import DriverCard from './DriverCard'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -76,7 +77,7 @@ function App() {
       <Rating>4</Rating>
       <Rating>5</Rating>
 
-      {/* <DriverCard
+      <DriverCard
         name="Travis Kalanick"
         rating={4.2}
         img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
@@ -93,7 +94,7 @@ function App() {
           model: 'Audi A3',
           licensePlate: 'BE33ER',
         }}
-      /> */}
+      />
     </div>
   );
 }
