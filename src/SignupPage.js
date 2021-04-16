@@ -18,7 +18,7 @@ class SignupPage extends React.Component {
   render() {
     return (<div>
       <div className="form-group">
-        <label htmlFor={"useremail"}>"Email"</label>
+        <label htmlFor={"useremail"}>Email</label>
         <input
           type="email"
           className="form-control"
@@ -30,7 +30,7 @@ class SignupPage extends React.Component {
       </div>
 
       <div className="form-group">
-        <label htmlFor={"pass"}>"Password (8 characters minimum)"</label>
+        <label htmlFor={"pass"}>Password (8 characters minimum)</label>
         <input
           type="userpassword"
           className="form-control"
@@ -44,7 +44,7 @@ class SignupPage extends React.Component {
       </div>
 
       <div className="form-group">
-      <label htmlFor="usernationality">"Nationality"</label>
+      <label htmlFor="usernationality">Nationality</label>
       <select
         className="form-control"
         id="usernationality"

@@ -3,7 +3,7 @@ import React from 'react';
 import profiles from './data/berlin.json';
 
 function Facebook() {
-  return <div>{profiles.map((profile) => UserId(profile))}</div>;
+  return profiles.map((profile) => UserId(profile));
 }
 
 function UserId(profile) {
