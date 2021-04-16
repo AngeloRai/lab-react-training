@@ -3,14 +3,12 @@ import React from 'react';
 import profiles from './data/berlin.json';
 
 function Facebook() {
-  return profiles.map((profile) => UserId(profile));
-}
-
-function UserId(profile) {
+  return(
+  profiles.map((profile) => { 
   return (
     <div className="d-flex flex-row bd-highlight mb-3 f-b-box">
       <div>
-        <img className="picture" src={profile.img} />
+        <img className="picture" src={profile.img} alt="profile pic" />
       </div>
       <div className="d-flex flex-column bd-highlight mb-3">
         <span>
@@ -30,8 +28,8 @@ function UserId(profile) {
           {profile.isStudent ? 'Student' : 'Teacher'}
         </span>
       </div>
-    </div>
-  );
+    </div>)
+  }))
 }
 
 export default Facebook;
