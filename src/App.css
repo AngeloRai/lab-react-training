@@ -88,3 +88,65 @@
   border: solid 2px black;
   margin: 1rem;
 }
+
+.like-buttons {
+  display: inline-block;
+ padding: 0.5rem;
+  
+  
+}
+
+.like-btns {
+  height: 3rem;
+  
+  width: 7rem;
+}
+.person-glasses{
+  width: 15rem;
+  margin: 30px;
+}
+
+.carousel {
+  width: 20rem
+}
+
+.carousel-box {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 10px;
+  padding: 2rem;
+}
+
+.carousel-btn-div {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.carousel-btns{
+  padding: 5px;
+  width: 6rem;
+  margin: 1rem;
+}
+
+.boxes {
+  width: 100px;
+  height: 100px;
+  border: solid 3px black;
+}
+
+.box-red-white {
+  display: flex;
+  
+  flex-wrap: wrap;
+
+}
+
+.picture {
+  width: 130px;
+}
+
+.f-b-box {
+  border: solid 1px black;
+}

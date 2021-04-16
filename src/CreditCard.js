@@ -19,7 +19,7 @@ function CreditCard(props) {
         <div className='logo-image'>
           <img className="card-logo" src={img}/>
         </div>
-        <div className="card-numbers">{props.number}</div>
+        <div className="card-numbers">............{props.number.toString().slice(12, 16)}</div>
         <div className="card-data">
           Expires {props.expirationMonth}/{props.expirationYear.toString().slice(2)} {props.bank} 
           <div>{props.owner}</div>     

@@ -1,13 +1,20 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 import IdCard from './IdCard';
 import Greetings from './Greetings';
 import Random from './Random';
 import BoxColor from './BoxColor';
 import CreditCard from './CreditCard';
 import Rating from './Rating';
-import DriverCard from './DriverCard'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import DriverCard from './DriverCard';
+import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
+import Dice from './Dice';
+import Carousel from './Carousel';
+import NumbersTable from './NumbersTable';
+import Facebook from './Facebook'
 
 function App() {
   return (
@@ -20,7 +27,6 @@ function App() {
         birth={String(new Date('1992-07-14'))}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
       <IdCard
         lastName="Delores "
         firstName="Obrien"
@@ -29,16 +35,12 @@ function App() {
         birth={String(new Date('1988-05-11'))}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <Random min={1} max={6} />
       <Random min={1} max={100} />
-
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       <CreditCard
         type="Visa"
         number="0123456789018845"
@@ -69,14 +71,12 @@ function App() {
         bgColor="#ddbb55"
         color="white"
       />
-
       <Rating>0</Rating>
       <Rating>1.49</Rating>
       <Rating>1.5</Rating>
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       <DriverCard
         name="Travis Kalanick"
         rating={4.2}
@@ -95,6 +95,25 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButton />
+      <LikeButton />
+
+      <ClickablePicture />
+
+      <Dice />
+
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      <NumbersTable limit={12} />
+
+      <Facebook/>
     </div>
   );
 }
